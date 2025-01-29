@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Righteous&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  box-sizing: border-box;
+  font-family: Righteous;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+:root {
+  --color-dark-green: #214d4d;
+  --color-orange: #f8972d;
+  --color-dark-grey: #4e4e4e;
+  --color-grey: #646464;
+  --border-color: #dadada;
+  --body-bg: #ffffff;
+  --normal-padding: 32px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.col {
+  display: flex;
+  flex-direction: col;
+}
+.gap {
+  gap: 5px;
+}
+.mainpadding {
+  padding: 64px 96px;
+}
+.second-mainpaddingP {
+  padding: 10px 32px;
+}
+.bold-para {
+  font-size: 10px;
+  color: var(--color-dark-grey);
+}
+.header-text-heading {
+  color: var(--color-dark-grey);
+  text-align: center;
+  font-family: Righteous;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.link-text {
+  color: var(--color-dark-grey);
+  text-align: center;
+  font-family: Righteous;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.input-div {
+  display: flex;
+  gap: 10px;
+  input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+}
+.width100 {
+  width: 100%;
+}
