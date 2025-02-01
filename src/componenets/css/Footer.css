@@ -1,0 +1,346 @@
+.footer-div {
+  display: flex;
+  padding: 100px var(--normal-padding);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  align-self: stretch;
+  background: var(--footer-bg);
+  position: relative;
+  margin-top: 5%;
+}
+.footer-div1 {
+  display: flex;
+
+  padding: 0px 64px;
+  align-items: flex-start;
+  gap: 83px;
+  align-self: stretch;
+  margin-top: 5%;
+}
+.footer-div {
+  width: 100%;
+  padding: 40px var(--normal-padding);
+}
+
+.footer-div1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  color: var(--footer-text);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25.95px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.footer-links p {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.footer-input {
+  display: inline-flex;
+  padding: 6px 30px 8.98px 0px;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  margin-top: 33px;
+}
+
+.footer-input input {
+  width: 100%;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.social-icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: var(--color-orange);
+}
+.arrow-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+.footer-input {
+  position: relative;
+}
+.footer-div2 {
+  display: flex;
+  padding-top: 16px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-top: 1px solid var(--border-color);
+}
+.copyright {
+  color: var(--footer-text);
+  font-family: var(--Poppins);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 31px;
+}
+.footer-div2-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer-btn-div {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  width: 100%;
+}
+.footer-btn {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px 10px 10.97px 10px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: #345e41;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.footer-btn:hover {
+  background: var(--color-orange);
+}
+.absolute-div {
+  display: flex;
+  align-items: center;
+justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: -12%;
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    display: flex;
+    height: 113px;
+    padding: 0px 64px;
+    align-items: center;
+    gap: 42px;
+    align-self: stretch;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+    width: 80%;
+  }
+}
+.footer-form-input-div {
+  display: flex;
+  flex-direction: column;
+}
+.footer-input-div-form1 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.footer-form-title {
+  color: #8e8d8b;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.footer-input-div-form2 {
+  display: flex;
+  padding: 6px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-bottom: 1px solid #dadada;
+  input {
+    border: none;
+    outline: none;
+  }
+}
+.footer-form-btn {
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border: 1px solid #214d4d;
+  cursor: pointer;
+  color: #4E4E4E;
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+max-width: 30%;
+}
+.footer-form-btn:hover {
+  background: var(--color-orange);
+  transition: var(  --transform);
+  border: none;
+  color: #fff;
+}
+/* Your existing CSS plus responsive styles */
+
+@media screen and (max-width: 1200px) {
+    .absolute-div form {
+      width: 90%;
+      padding: 0px 32px;
+      gap: 24px;
+    }
+  
+    .footer-div1 {
+      padding: 0px 32px;
+      gap: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .absolute-div {
+      position: static;
+    
+    }
+    .footer-input{
+        width: 70%;
+    }
+  
+    .absolute-div form {
+      flex-direction: column;
+      height: auto;
+      padding: 32px;
+      gap: 24px;
+      width: 100%;
+    }
+  
+    .footer-form-btn {
+      max-width: 100%;
+    }
+  
+    .footer-div {
+      margin-top: 0;
+      padding: 10px 20px;
+      gap: 0;
+    }
+  
+    .footer-div1 {
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+  
+    .footer-section {
+      flex: 0 0 calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-div2 {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+  
+    .footer-section {
+      flex: 0 0 100%;
+    }
+  
+    .footer-div1 {
+      padding: 0px 0px;
+      gap: 30px;
+    }
+  
+    .copyright {
+      font-size: 14px;
+    }
+    .footer-form-input-div{
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .absolute-div form {
+      padding: 24px 16px;
+    }
+  
+    .footer-form-input-div {
+      width: 100%;
+    }
+  
+    .footer-input-div-form2 input {
+      width: 100%;
+    }
+  
+    .footer-form-btn {
+      padding: 12px 24px;
+      font-size: 12px;
+    }
+  
+    .footer-section h3 {
+      font-size: 18px;
+    }
+  
+    .footer-section p {
+      font-size: 14px;
+    }
+  
+    .social-icons h4 {
+      font-size: 16px;
+    }
+  
+    .footer-btn {
+      width: 35px;
+      height: 35px;
+    }
+    .footer-form-input-div{
+        width: 100%;
+    }
+  }
+  

@@ -1,5 +1,11 @@
 import React from "react";
+import PageTransition from "../componenets/PageTransition";
 const Home = () => {
-  return <h1>Home</h1>;
+  return(<>
+  <PageTransition>
+  <h1>Home</h1>
+  </PageTransition>
+  </>)
+ 
 };
 export default Home;
