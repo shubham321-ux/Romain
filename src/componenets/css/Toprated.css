@@ -1,12 +1,11 @@
 .toprated-div {
     width: 100%;
     display: flex;
-    padding: clamp(32px, 5vw, 64px) var(--large-padding);
+    padding: 64px var(--large-padding);
     flex-direction: column;
     align-items: center;
     gap: clamp(20px, 4vw, 40px);
     align-self: stretch;
-    max-width: 1440px;
     margin: 0 auto;
   }
   
