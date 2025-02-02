@@ -1,0 +1,67 @@
+.svg-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.svg-div-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  flex: 1 0 0;
+}
+.svg-text{
+    color: var(--color-dark-grey);
+text-align: center;
+font-family: var(--Poppins);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+ 
+  /* Add hover pause effect */
+  /* Base animations */
+.svg-div-main-svg:nth-child(1) img {
+    animation: floatAnimation 3s ease-in-out infinite;
+  }
+  
+  .svg-div-main-svg:nth-child(2) img {
+    animation: floatAnimation 3.5s ease-in-out infinite;
+  }
+  
+  .svg-div-main-svg:nth-child(3) img {
+    animation: floatAnimation 4s ease-in-out infinite;
+  }
+  
+  .svg-div-main-svg:nth-child(4) img {
+    animation: floatAnimation 4.5s ease-in-out infinite;
+  }
+  
+  .svg-div-main-svg:nth-child(5) img {
+    animation: floatAnimation 5s ease-in-out infinite;
+  }
+  
+  /* Hover state for the parent container */
+  .svg-div-main-svg:hover img {
+    animation: none;
+    transform: translateY(-10px);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  

@@ -1,0 +1,425 @@
+.card-div {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  justify-content: space-between;
+}
+
+.card-div1 {
+  width: 604px;
+  height: 444px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.navigation-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.dot.active {
+  background: white;
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.fullscreen-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 48px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.card-div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  width: 100%;
+}
+.rating-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating-and-date-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.rateText {
+  color: #19ad6f;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px; /* 150% */
+}
+.braket-text {
+  color: #8e8e8e;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 175% */
+}
+.date-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.date-text {
+  color: #000;
+  font-family: "Prompt", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px; /* 200% */
+}
+.ticket-price-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ticket-price-div1 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+}
+.tent-price {
+  color: #202020;
+  font-family: var(--Poppins);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px;
+}
+.previous-price {
+  color: #515151;
+  font-family: var(--Poppins);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  text-decoration-line: strikethrough;
+}
+.ticket-containetr {
+  display: flex;
+  height: 24px;
+  padding: 6px 1.928px 6px 2px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.652px;
+  background: linear-gradient(
+    90deg,
+    rgba(11, 130, 42, 0.11) 3.64%,
+    rgba(11, 130, 42, 0.1) 100%
+  );
+}
+.ticket-text-heading{
+    color: #0B822A;
+font-family: var(--Poppins);
+font-size: 9px;
+font-style: normal;
+font-weight: 600;
+line-height: 14px; /* 155.556% */
+text-transform: capitalize;
+}
+.container-edge{
+    display: flex;
+    align-items: center;
+    gap: -5px;
+}
+
+.ticket-last-svg{
+    margin-left: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.multisvg-countainer{
+    display: flex;
+padding: 20px 0px;
+align-items: flex-start;
+justify-content:space-between;
+gap: 64px;
+align-self: stretch;
+border-top: 1px solid rgba(138, 138, 138, 0.40);
+}
+.svg-div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.arrow-btn-div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+}
+.arrow-btn-div:hover{
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
+.arrow-btn-text{
+    color: #000;
+font-family: var(--Poppins);
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: 18.98px; 
+letter-spacing: 0.65px;
+text-transform: uppercase;
+}
+
+
+
+.card-div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    justify-content: space-between;
+  }
+  
+  .card-div.column-layout {
+    flex-direction: column;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card-div {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+
+
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+
+.carousel-track:active {
+  cursor: grabbing;
+}
+
+.next-image-preview {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.dot {
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  transform: scale(1.2);
+  background: var(--color-orange);
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+}
+.carousel-container:hover{
+    scale: 1.2;
+    transition: all 0.3s ease-in-out;
+}
+
+.carousel-container:active {
+  cursor: grabbing;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1200px) {
+    .card-div {
+      gap: 30px;
+      padding: 0px;
+    }
+  
+    .card-div1 {
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .card-div {
+      flex-direction: column;
+      gap: 25px;
+    }
+  
+    .card-div1, .card-div2 {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .card-div1 {
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card-div1 {
+      height: 300px;
+    }
+  
+    .multisvg-countainer {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .svg-div {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-div {
+      padding: 0px;
+      gap: 20px;
+    }
+  
+    .card-div1 {
+      height: 250px;
+    }
+  
+    .rating-div {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  
+    .ticket-price-div1 {
+      flex-wrap: wrap;
+    }
+  
+    .container-edge {
+      width: 100%;
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Maintain other styles but add responsive font sizes */
+  .heading3 {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+  }
+  
+  .para-normal {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+  }
+  
+  .ticket-text-heading {
+    font-size: clamp(0.75rem, 1.2vw, 0.9rem);
+  }
+  
+  .arrow-btn-text {
+    font-size: clamp(0.75rem, 1.2vw, 0.813rem);
+  }

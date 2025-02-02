@@ -1,0 +1,115 @@
+.form-section-div {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px var(--normal-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(20px, 4vw, 40px);
+  }
+  
+  .form-section-div-image {
+    width: clamp(300px, 30vw, 367px);
+    height: clamp(300px, 40vw, 400px);
+    align-self: stretch;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #d9d9d9;
+  }
+  
+  .form-section-div-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .form-section-div form {
+    padding: clamp(40px, 5vw, 100px) clamp(20px, 4vw, 64px);
+    border-radius: 16px;
+    background: #f9f9f7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(32px, 4vw, 64px);
+    flex: 1;
+    /* min-width: 300px; */
+  }
+  
+  .form-row {
+    display: flex;
+    gap: clamp(10px, 2vw, 20px);
+    width: 100%;
+  }
+  
+  .footer-form-input-div {
+    flex: 1;
+    /* min-width: 200px; */
+  }
+  
+  .footer-form-input-div input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: clamp(14px, 1.5vw, 16px);
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .footer-form-btn {
+    width: 100%;
+    padding: clamp(12px, 2vw, 16px);
+    border-radius: 8px;
+    font-size: clamp(14px, 1.5vw, 16px);
+    cursor: pointer;
+  }
+  
+  @media (max-width: 992px) {
+    .form-section-div {
+      flex-direction: column;
+    }
+  
+    .form-section-div-image {
+      width: 100%;
+      /* max-width: 500px; */
+    }
+  
+    .form-section-div form {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    .footer-form-input-div {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-section-div form {
+      padding: 24px 16px;
+      gap: 24px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .form-section-div {
+      padding: 10px var(--padding-phone);
+    }
+    
+    .form-section-div-image {
+      width: 100%;
+      /* height: 350px; */
+    }
+    
+    .form-section-div form {
+      /* padding: 60px 40px; */
+      gap: 40px;
+      padding: 10px 0;
+    }
+  }

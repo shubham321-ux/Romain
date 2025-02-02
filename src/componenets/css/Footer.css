@@ -221,7 +221,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-max-width: 30%;
+max-width: 20%;
 }
 .footer-form-btn:hover {
   background: var(--color-orange);

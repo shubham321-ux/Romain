@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
 
 * {
   padding: 0;
@@ -22,14 +23,18 @@ body {
   --color-grey: #646464;
   --border-color: #dadada;
   --body-bg: #ffffff;
-  --footer-bg: #1C231F;
-  --footer-text: #BCBCBC;
+  --footer-bg: #1c231f;
+  --footer-text: #bcbcbc;
+  --bg-normal:#FAFAFA;
   --normal-padding: 32px;
   --transform: all 0.3s ease-in-out;
   --Poppins: "Poppins", sans-serif;
   --padding-phone: 20px;
+  --rock-salt: "'Rock Salt', cursive";
+  --prompt: "'Prompt', sans-serif";
+  --large-padding:96px;
 }
-#root{
+#root {
   width: 100%;
   /* max-width: 1500px; */
 }
@@ -85,11 +90,73 @@ body {
 .width100 {
   width: 100%;
 }
-.footer-title{
-  color: #FFF;
-font-family: Righteous;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px; /* 150% */
+.footer-title {
+  color: #fff;
+  font-family: Righteous;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.heading1 {
+  color: var(--color-dark-grey);
+  text-align: center;
+  font-family: Righteous;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.heading2 {
+  color: var(--color-dark-grey);
+  text-align: right;
+  font-family: Righteous;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.heading3 {
+  color: #000;
+  font-family: "Prompt", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px; 
+}
+.rock-heading{
+  color: var(--color-orange);
+  text-align: right;
+  font-family:  "'Rock Salt', cursive";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.para-normal {
+  color: var(--color-grey);
+  text-align: right;
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.title-h1 {
+  color: var(--color-orange);
+  text-align: right;
+  font-family: var(--rock-salt);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+ @media (max-width: 768px) {
+  .heading2{
+    width: 100%;
+    text-align: start;
+  }
+  .para-normal{
+    width: 100%;
+  }
 }

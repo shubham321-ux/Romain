@@ -1,0 +1,51 @@
+.campingGr-div {
+    display: flex;
+    padding: 10px var(--normal-padding);
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+  }
+  
+  .campingGr-div-content {
+    display: flex;
+    padding: 100px 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    flex: 1 0 0;
+    border-radius: 16px;
+    background: var(--bg-normal);
+  }
+  
+  /* Responsive Breakpoints */
+  @media (max-width: 1200px) {
+    .campingGr-div-content {
+      gap: 48px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .campingGr-div {
+      padding: 10px 24px;
+    }
+    
+    .campingGr-div-content {
+      padding: 60px 32px;
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .campingGr-div {
+      flex-direction: column;
+      padding: 10px var(--padding-phone);
+    }
+  
+    .campingGr-div-content {
+
+      gap: 32px;
+      width: 100%;
+    }
+  }
+  
+ 
