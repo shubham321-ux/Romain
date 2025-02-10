@@ -33,10 +33,11 @@ body {
   --rock-salt: "'Rock Salt', cursive";
   --prompt: "'Prompt', sans-serif";
   --large-padding:96px;
+  --social-card-color:#214D4D;
 }
 #root {
   width: 100%;
-  /* max-width: 1500px; */
+  max-width: 1500px;
 }
 .flex {
   display: flex;
